@@ -4,111 +4,118 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Miscelánea Nubes</title>
+
     <style>
+        /* --- ESTILO ELEGANTE EN AZULES --- */
         body {
             margin: 0;
             font-family: 'Segoe UI', sans-serif;
-            background: #f4f6fb;
-            color: #2c2c2c;
+            background: #f1f5fb;
+            color: #1f2d4a;
         }
+
         header {
-            background: linear-gradient(135deg, #6ea8ff, #3c5ec9);
+            background: linear-gradient(135deg, #6ea8ff, #3b60c4);
             padding: 60px 20px;
             text-align: center;
             color: white;
-            letter-spacing: 1px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
         }
         header h1 {
             margin: 0;
-            font-size: 3.2rem;
-            font-weight: 700;
+            font-size: 3rem;
+            font-weight: 600;
         }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2rem;
+        }
+
         nav {
-            background: #ffffffcc;
+            background: white;
             padding: 15px;
             text-align: center;
-            backdrop-filter: blur(10px);
             position: sticky;
             top: 0;
             z-index: 1000;
-            border-bottom: 1px solid #e0e7ff;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
         }
         nav a {
-            margin: 0 15px;
+            margin: 0 20px;
             text-decoration: none;
-            color: #3c5ec9;
-            font-weight: 600;
-            transition: 0.3s;
+            color: #3b60c4;
+            font-size: 1.1rem;
+            font-weight: bold;
         }
-        nav a:hover {
-            color: #1f3da0;
-        }
+
         .section {
             padding: 60px 20px;
             max-width: 1200px;
             margin: auto;
         }
+
         .title {
             font-size: 2.4rem;
-            margin-bottom: 30px;
+            font-weight: 600;
             text-align: center;
-            font-weight: 700;
-            color: #1f3da0;
+            margin-bottom: 40px;
+            color: #284a80;
         }
-        .products, .objectives, .catalogo {
+
+        .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 25px;
         }
+
         .card {
             background: white;
             padding: 25px;
-            border-radius: 16px;
-            box-shadow: 0 6px 14px rgba(0,0,0,0.08);
-            font-size: 1.1rem;
+            border-radius: 18px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
             transition: 0.3s;
         }
         .card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 22px rgba(0,0,0,0.1);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
         }
-        .gallery, .catalogo {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-            gap: 25px;
-        }
-        .gallery img, .catalogo img {
-            width: 100%;
-            border-radius: 16px;
-            box-shadow: 0 6px 14px rgba(0,0,0,0.1);
-        }
-        .catalog-item {
+
+        .catalog-card {
             text-align: center;
-            font-weight: 600;
-            padding-top: 10px;
+            padding: 20px;
         }
+        .catalog-card img {
+            width: 100%;
+            border-radius: 14px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+        }
+        .catalog-card h3 {
+            margin-top: 15px;
+            font-size: 1.3rem;
+            color: #284a80;
+        }
+
         footer {
-            background: #1f3da0;
+            background: #3b60c4;
             color: white;
             text-align: center;
             padding: 25px;
             margin-top: 40px;
-            font-size: 1rem;
         }
 
-        /* VERSION MÓVIL */
-        @media (max-width: 768px) {
-            header h1 { font-size: 2.4rem; }
-            .section { padding: 40px 15px; }
+        /* --- VERSIÓN MÓVIL OPTIMIZADA --- */
+        @media (max-width: 600px) {
+            header h1 { font-size: 2.2rem; }
             .title { font-size: 2rem; }
-            nav a { margin: 0 8px; font-size: 0.9rem; }
+            nav a { margin: 0 10px; font-size: 1rem; }
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>Miscelánea Nubes</h1>
-        <p>Tu lugar de confianza en Bogotá | Calle 38f sur #72k - 78</p>
+        <p>Tu miscelánea y taller de cerámicas | Calle 38f sur #72k - 78, Bogotá</p>
     </header>
 
     <nav>
@@ -119,60 +126,68 @@
         <a href="#contacto">Contacto</a>
     </nav>
 
+    <!-- OBJETIVOS -->
     <section id="objetivos" class="section">
         <h2 class="title">Nuestros Objetivos</h2>
-        <div class="objectives">
-            <div class="card">Brindar productos de papelería, miscelánea y cerámicas con la mejor calidad.</div>
-            <div class="card">Ofrecer atención cercana, rápida y confiable para toda la comunidad.</div>
-            <div class="card">Crear un espacio accesible y moderno tanto virtual como presencial.</div>
+        <div class="grid">
+            <div class="card">Brindar productos de calidad en papelería, miscelánea y cerámicas.</div>
+            <div class="card">Ofrecer piezas artesanales hechas con dedicación.</div>
+            <div class="card">Crear un espacio accesible, moderno y cercano a la comunidad.</div>
         </div>
     </section>
 
+    <!-- PRODUCTOS -->
     <section id="productos" class="section">
         <h2 class="title">Productos y Servicios</h2>
-        <div class="products">
-            <div class="card">Papelería y miscelánea general</div>
-            <div class="card">Taller de cerámicas</div>
-            <div class="card">Detalles personalizados</div>
-            <div class="card">Servicios escolares y de oficina</div>
+        <div class="grid">
+            <div class="card">Papelería y miscelánea</div>
+            <div class="card">Taller de cerámicas personalizadas</div>
+            <div class="card">Marranitas decoradas tipo alcancía</div>
+            <div class="card">Diseños inspirados en superhéroes</div>
         </div>
     </section>
 
+    <!-- CATÁLOGO DE CERÁMICAS -->
     <section id="catalogo" class="section">
         <h2 class="title">Catálogo de Cerámicas</h2>
-        <div class="catalogo">
-            <div>
-                <img src="https://via.placeholder.com/400x300?text=Cerámica+sin+pintar" alt="Cerámica sin pintar" />
-                <p class="catalog-item">Cerámicas pequeñas sin pintar</p>
+        <div class="grid">
+            <div class="catalog-card">
+                <img src="https://via.placeholder.com/350x280?text=Cerámica+sin+pintar" alt="Cerámica sin pintar">
+                <h3>Figuras pequeñas sin pintar</h3>
             </div>
-            <div>
-                <img src="https://via.placeholder.com/400x300?text=Cerámica+pintada" alt="Cerámica pintada" />
-                <p class="catalog-item">Cerámicas pintadas</p>
+            <div class="catalog-card">
+                <img src="https://via.placeholder.com/350x280?text=Cerámica+pintada" alt="Cerámica pintada">
+                <h3>Cerámicas pintadas a mano</h3>
             </div>
-            <div>
-                <img src="https://via.placeholder.com/400x300?text=Marranita+superhéroe" alt="Marranita personalizada" />
-                <p class="catalog-item">Marranitas personalizadas (Superhéroes)</p>
+            <div class="catalog-card">
+                <img src="https://via.placeholder.com/350x280?text=Marranita+Superhéroe" alt="Marranita personalizada">
+                <h3>Marranitas de superhéroes</h3>
             </div>
         </div>
     </section>
 
+    <!-- GALERÍA -->
     <section id="galeria" class="section">
-        <h2 class="title">Imágenes</h2>
-        <div class="gallery">
-            <img src="https://via.placeholder.com/400x300?text=Producto+1" alt="Producto 1" />
-            <img src="https://via.placeholder.com/400x300?text=Producto+2" alt="Producto 2" />
-            <img src="https://via.placeholder.com/400x300?text=Producto+3" alt="Producto 3" />
+        <h2 class="title">Galería</h2>
+        <div class="grid">
+            <img class="card" src="https://via.placeholder.com/400x300?text=Producto+1" alt="Producto 1" />
+            <img class="card" src="https://via.placeholder.com/400x300?text=Producto+2" alt="Producto 2" />
+            <img class="card" src="https://via.placeholder.com/400x300?text=Producto+3" alt="Producto 3" />
         </div>
     </section>
 
+    <!-- CONTACTO -->
     <section id="contacto" class="section">
         <h2 class="title">Contacto</h2>
-        <p style="text-align:center; font-size:1.2rem;">Escríbenos o llámanos:</p>
-        <p style="text-align:center; font-size:1.5rem; font-weight:bold;">3225239470 (Danna Jojoa)<br>3013154459</p>
+        <p style="text-align:center; font-size:1.3rem;">Comunícate con nosotros:</p>
+        <p style="text-align:center; font-size:1.6rem; font-weight:bold;">
+            3225239470 (Danna Jojoa)<br>
+            3013154459
+        </p>
     </section>
 
     <footer>
         © 2025 Miscelánea Nubes - Todos los derechos reservados
     </footer>
 </body>
-</html>
+</html
