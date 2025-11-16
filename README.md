@@ -16,10 +16,10 @@ Ofrecemos productos físicos y piezas cerámicas personalizadas (marranitas con 
 
 ## Cómo está publicado
 Este sitio está publicado con **GitHub Pages**.  
-Archivo principal: `index.html` (en la raíz del repositorio).
+
 
 ---
 
-Si quieres colaborar o agregar más fotos: sube las imágenes a `assets/images/` y actualiza las rutas en `index.html`.
+
 
 © 2025 Miscelánea Nubes
